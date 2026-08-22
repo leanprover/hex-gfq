@@ -19,10 +19,10 @@
       "type": "git",
       "subDir": null,
       "scope": "",
-      "rev": "6ca8ad40bc073b0f7439bafd880e5615f861e3d6",
+      "rev": "0f46f5bc5b2708acc26d25873244a2a0dfa0a153",
       "name": "HexConway",
       "manifestFile": "lake-manifest.json",
-      "inputRev": "6ca8ad40bc073b0f7439bafd880e5615f861e3d6",
+      "inputRev": "0f46f5bc5b2708acc26d25873244a2a0dfa0a153",
       "inherited": false,
       "configFile": "lakefile.toml"
     },
