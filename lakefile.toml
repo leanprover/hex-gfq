@@ -9,17 +9,17 @@ leanOptions = [
 [[require]]
 name = "HexGFqField"
 git = "https://github.com/leanprover/hex-gfq-field.git"
-rev = "9ee397a9f583bd1006a1ea4318095b7707b4a964"
+rev = "a501c8c86a05cb7243ea6362654fcbf1394e5904"
 
 [[require]]
 name = "HexConway"
 git = "https://github.com/leanprover/hex-conway.git"
-rev = "65a26c7b9b0dcdba6077113a3858ec2cf70326a4"
+rev = "35e8c974602af67abcced14167d21cb6dc43ff9d"
 
 [[require]]
 name = "HexGF2"
 git = "https://github.com/leanprover/hex-gf2.git"
-rev = "c20ae3e9ab021cc2ce9539ad48719306e07ceda4"
+rev = "264ff5035e3ca7df7e5e18df6e780e83766d7fbf"
 
 [[lean_lib]]
 name = "HexGFq"
