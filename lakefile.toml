@@ -7,33 +7,19 @@ leanOptions = [
 ]
 
 [[require]]
-name = "HexGFqField"
-git = "https://github.com/leanprover/hex-gfq-field.git"
-rev = "v0.6.0"
-
-[[require]]
 name = "HexConway"
 git = "https://github.com/leanprover/hex-conway.git"
-rev = "v0.6.0"
+rev = "v0.7.0"
+
+[[require]]
+name = "HexGFqField"
+git = "https://github.com/leanprover/hex-gfq-field.git"
+rev = "v0.7.0"
 
 [[require]]
 name = "HexGF2"
 git = "https://github.com/leanprover/hex-gf2.git"
-rev = "v0.6.0"
+rev = "v0.7.0"
 
 [[lean_lib]]
 name = "HexGFq"
-
-# The sync-managed conformance drivers live at `conformance/HexGFq/*.lean`, so
-# their module names fall inside the `HexGFq` library's namespace. Lake resolves
-# an import against the last library in the owning package that claims it, so
-# declaring the conformance sources here, after `lean_lib HexGFq`, is what makes
-# `import HexGFq.CrossCheck` — which `conformance/HexGFq/EmitFixtures.lean` does
-# — find them. Declaring them only in the conformance sub-project leaves the
-# module claimed by the root package too, and Lake then looks for the missing
-# `HexGFq/CrossCheck.lean` beside the library source. Not a default target: it
-# is verification-only, and the conformance sub-project builds it.
-[[lean_lib]]
-name = "HexGFqConformanceSupport"
-srcDir = "conformance"
-globs = ["HexGFq.Conformance", "HexGFq.CrossCheck"]
